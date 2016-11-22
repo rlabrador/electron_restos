@@ -13,4 +13,18 @@ const Mustache = require('mustache');
 
 Documentation officielle de Electron :
 
-Documentation
+Documentation officielle de electron package manager:
+https://gihub.com/electron-userland/electron-packager
+
+https://www.npmjs.com/package/electron-packager
+
+npm install electron-packager -g
+
+
+Targets :
+Windows (also known as win32, for both 32/64 bit)
+OS X (also known as darwin) / Mac App Store (also known as mas)*
+Linux (for x86, x86_64, and armv7l architectures)
+
+
+

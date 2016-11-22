@@ -1,1 +1,1 @@
-electron-packager restos restos --platform=win32
+electron-packager restos restos --platform=x86 --arch=x64 --icon favicon.ico

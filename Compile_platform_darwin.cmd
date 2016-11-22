@@ -1,1 +1,1 @@
-electron-packager restos restos --platform=win32
+electron-packager restos restos --platform=darwin --arch=x64 --icon favicon.icns
