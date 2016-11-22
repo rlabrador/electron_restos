@@ -1,0 +1,20 @@
+{
+  "name": "restos",
+  "version": "1.0.0",
+  "description": "my first electron app",
+  "main": "./app/main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "RL",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^1.4.7"
+  },
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "mustache": "^2.3.0",
+    "yelp": "^1.0.1"
+  }
+}

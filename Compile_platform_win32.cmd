@@ -1,0 +1,1 @@
+electron-packager restos restos --platform=win32
