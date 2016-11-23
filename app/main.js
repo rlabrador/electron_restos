@@ -1,6 +1,9 @@
 
 // eventEmitter de Node.js est utilisé ici
 //const {app, BrowserWindow} = require('electron');
+//module.paths.push(__dirname+'/node_modules');
+// module.paths.push(__dirname + '/bootstrap');
+// module.paths.push(__dirname + '/assets/js');
 const {app, ipcMain, BrowserWindow} = require('electron');
 //ici ipcMain est une sous instance de eventEmitter de Node.js
 
@@ -13,6 +16,7 @@ const {app, ipcMain, BrowserWindow} = require('electron');
 //var mainWindow = null;
 
 let mainWindow = null;
+
 
 app.on('ready', function() {
   // Create the browser window.
@@ -29,7 +33,9 @@ app.on('ready', function() {
   mainWindow.loadURL('file://' + __dirname + '/dashboard.html');
   mainWindow.maximize(true);
   // Open the DevTools.
-  //mainWindow.openDevTools();
+  mainWindow.openDevTools();
+
+  
 
   // Emitted when the window is closed.
   mainWindow.on('closed', function() {
@@ -52,3 +58,6 @@ app.on('window-all-closed', function() {
 ipcMain.on('close-main-window', (event, arg) =>{
   app.quit();
 });
+
+
+require('./renderer');

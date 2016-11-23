@@ -17,12 +17,7 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
         <!-- Bootstrap core JavaScript
-    ================================================== -->
-        <!-- Placed at the end of the document so the pages load faster -->
-        <script src="assets/js/jquery.min.js"></script>
-        <script src="bootstrap/js/bootstrap.min.js"></script>
-        <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-        <script src="assets/js/ie10-viewport-bug-workaround.js"></script>    
+    ================================================== -->    
     </head>
     <body>
         <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -101,5 +96,12 @@
         </div>
     </body>
     <script>
+    // require('./assets/js/jquery.min.js');
+    // require('./bootstrap/js/bootstrap.min.js');
+    // <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    // require('./assets/js/ie10-viewport-bug-workaround.js');
     require('./renderer');
-    </script>
+    window.jQuery = window.$ = require('jquery');
+    </script>    
+    
+
